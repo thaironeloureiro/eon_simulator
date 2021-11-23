@@ -249,7 +249,7 @@ class Simulador(Process):
         result = []
         menor = 0
         if len(slots_escolhidos) == 1 or len(slots_escolhidos) == 0:
-            return 0
+			return 0
         else:
             for l in slots_escolhidos:
                 result.append(l - num_slots)
@@ -259,7 +259,7 @@ class Simulador(Process):
             for pos, num in enumerate(result):
                 if num == menor:
                     index = pos
-            return index
+			return index
 
 	# Computa numero de requesições por banda
 	def conta_requisicao_banda(self, banda):
